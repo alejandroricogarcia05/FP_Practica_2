@@ -7,10 +7,8 @@ public class Sesion2 {
             System.out.println("Escribe un número entero numero mayor que cinco y menor que 30");
             numero = teclado.nextInt();
             for (int i = 1; i <= numero; i++) {
-                String asterisco = "";
-                String asteriscos = asterisco+"*";
-                System.out.println(asteriscos);
-                asterisco += "*";
+                char asterisco = '*';
+                String sumaAsteriscos =
             }
 
             System.out.println();
