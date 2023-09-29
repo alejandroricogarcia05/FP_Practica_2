@@ -7,11 +7,12 @@ public class Sesion2 {
             System.out.println("Escribe un número entero numero mayor que cinco y menor que 30");
             numero = teclado.nextInt();
             for (int i = 1; i <= numero; i++) {
-                char asterisco = '*';
-                String sumaAsteriscos =
-            }
+                for(int j = 1; j <= i; j++) {
+                    System.out.print("*");
+                }
+                System.out.println();
 
-            System.out.println();
+            }
         } while (numero > 5 && numero < 30);
 
     }
