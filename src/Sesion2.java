@@ -1,3 +1,4 @@
+// Realizado por Alejandro Rico García bu0219 IWSIM12
 import java.util.Scanner;
 public class Sesion2 {
     public static void main(String[] args) {
