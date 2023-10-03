@@ -16,8 +16,7 @@ public class Sesion2 {
         else {
             System.out.println("Opcion incorrecta");
         }
-        switch (opcion) {
-            case 1: {
+
                 System.out.print("Escribe un número entero numero mayor que cinco y menor que 30  ");
 
                 int numero = teclado.nextInt();
@@ -39,14 +38,13 @@ public class Sesion2 {
                     }
                     System.out.println();
                 }
-            }
-            case 2: {
+
                 //CUADRADO
                 System.out.println("Introduce un numero mayor o igual que 10 y menor o igual que 35");
-                int numero = teclado.nextInt();
+                numero = teclado.nextInt();
                 //Esto sirve para leerlo la primera vez, como haria un do while
                 while ((numero < 10) || (numero > 35)) {
-                    System.out.println("Introduce un numero mayor o igual que 10 y menor o igual que 35");
+                    System.out.print("Introduce un numero mayor o igual que 10 y menor o igual que 35");
                     numero = teclado.nextInt();
                     //Verfica si el numero es correcto y si sigue siendon incorrecto vuelve a ejecutarlo
                 }
@@ -58,9 +56,9 @@ public class Sesion2 {
                     }
                     System.out.println();
                 }
-            }
 
-            case 3: {
+
+
                 //Multiplicacion
                 System.out.println("Escribe dos numeros comprendidos entre 0 y 20 ");
                 int numero1 = teclado.nextInt();
@@ -70,7 +68,7 @@ public class Sesion2 {
                 //Compruebo que ninguno de los numeros son incorrectos
                 {
                     if (((numero1 < 0) || (numero1 > 20))) {
-                        System.out.println("Introduce un numero comprendido entre 0 y 20");
+                        System.out.print("Introduce un numero comprendido entre 0 y 20");
                         numero1 = teclado.nextInt();
                         //Numero1 incorrecto
                     } else if ((numero2 < 0) || (numero2 > 20)) {
@@ -85,10 +83,10 @@ public class Sesion2 {
                     //La multiplicacion es sumar n veces un numero, por lo que repetimos i veces (numero1) la suma de numero2
                 }
                 System.out.println("El resultado de la multiplicacion de " + numero1 + " * " + numero2 + " es " + resultado);
-            }
-            case 4: {
+
+
                 System.out.print("Escribe un número entero del 1 al 10");
-                int numero = teclado.nextInt();
+                numero = teclado.nextInt();
                 //Esto sirve para leerlo la primera vez, como haria un do while,
                 while (numero <= 1 || numero >= 10) {
                     System.out.println("Numero incorrecto");
@@ -101,7 +99,8 @@ public class Sesion2 {
                     int multiplicacion = numero * i;
                     System.out.printf("%3d X %3d = %3d\n", numero, i, multiplicacion);
                 }
-            }
+
         }
     }
-}
+
+
