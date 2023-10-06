@@ -5,18 +5,6 @@ import java.util.Scanner;
 public class Sesion2 {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
-        System.out.println("1. Dibuja un triangulo rectangulo.");
-        System.out.println("2. Dibuja un cuadrado.");
-        System.out.println("3. Multiplicar dos numeros.");
-        System.out.println("4. Escribir una tabla de multiplicar.");
-        System.out.println("5. Finalizar ejecucion.");
-        System.out.print("Introduzca la opcion deseada ");
-        int opcion = teclado.nextInt();
-        if (opcion < 6 && opcion > 0) {
-            System.out.println("Ha elegido la opción " + opcion);
-        } else {
-            System.out.println("Opcion incorrecta");
-        }
         System.out.print("Escribe un número entero numero mayor que cinco y menor que 30  ");
 
         int numero = teclado.nextInt();
@@ -45,6 +33,7 @@ public class Sesion2 {
         numero = teclado.nextInt();
         //Esto sirve para leerlo la primera vez, como haria un do while
         while ((numero < 10) || (numero > 35)) {
+            System.out.println("Numero Incorrecto");
             System.out.print("Introduce un numero mayor o igual que 10 y menor o igual que 35: ");
             numero = teclado.nextInt();
             //Verfica si el numero es correcto y si sigue siendon incorrecto vuelve a ejecutarlo
@@ -63,18 +52,13 @@ public class Sesion2 {
         int numero1 = teclado.nextInt();
         int numero2 = teclado.nextInt();
         //Introduzco los dos numeros
-        while (((numero1 < 0) || (numero1 > 20)) || ((numero2 < 0) || (numero2 > 20)))
-        //Compruebo que ninguno de los numeros son incorrectos
-        {
-            if (((numero1 < 0) || (numero1 > 20))) {
-                System.out.print("Introduce un numero comprendido entre 0 y 20");
-                numero1 = teclado.nextInt();
-                //Numero1 incorrecto
-            } else if ((numero2 < 0) || (numero2 > 20)) {
-                System.out.print("Introduce un numero comprendido entre 0 y 20");
-                numero2 = teclado.nextInt();
-                //Numero2 incorrecto
-            }
+        while (((numero1 < 0) || (numero1 > 20)) || ((numero2 < 0) || (numero2 > 20))) {
+            //Compruebo que ninguno de los numeros son incorrectos
+            System.out.println("Numero Incorrecto");
+            System.out.print("Introduce un numero comprendido entre 0 y 20");
+            numero1 = teclado.nextInt();
+            numero2 = teclado.nextInt();
+            //Numero1 incorrecto
         }
         int resultado = 0;
         for (int i = 0; i < numero1; i++) {
@@ -97,7 +81,6 @@ public class Sesion2 {
             int multiplicacion = numero * i;
             System.out.printf("%3d X %3d = %3d\n", numero, i, multiplicacion);
         }
-
     }
 }
 
