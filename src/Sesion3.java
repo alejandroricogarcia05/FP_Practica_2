@@ -4,7 +4,7 @@ public class Sesion3 {
     static Scanner teclado = new Scanner(System.in);
 
     public static void main(String[] args) {
-        int opcion = 0;
+        int opcion;
         do {
             opcion = menu();
             switch (opcion) {
@@ -15,8 +15,8 @@ public class Sesion3 {
                     break;
                 case 2:
                     int lado = leerNumero(10, 35);
-                    caracter = leerCaracter();
-                    dibujarCuadrado(lado, caracter);
+                    char signo = leerCaracter();
+                    dibujarCuadrado(lado, signo);
                     break;
                 case 3:
                     int numero1 = leerNumero(0, 20);
@@ -38,12 +38,11 @@ public class Sesion3 {
         System.out.println("3. Multiplicar dos numeros.");
         System.out.println("4. Escribir una tabla de multiplicar.");
         System.out.println("5. Finalizar ejecucion.");
-        int opcion = leerNumero(1, 5);
-        return opcion;
+        return leerNumero(1, 5);
     }
 
     public static int leerNumero(int minimo, int maximo) {
-        int numero = 0;
+        int numero;
         do {
             System.out.print("Escribe un numero comprendido entre " + minimo + " y " + maximo + ": ");
             numero = teclado.nextInt();
@@ -97,7 +96,6 @@ public class Sesion3 {
         System.out.println("La multipliacion de " + numero1 + " * " + numero2 + " = " + resultado);
         return resultado;
     }
-
     public static void tablaDeMultiplicar(int numero) {
         for (int i = 0; i <= 10; i++) {
             int multiplicacion = numero * i;
