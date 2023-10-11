@@ -1,3 +1,5 @@
+// Realizado por Alejandro Rico García bu0219 IWSIM12
+
 import java.util.Scanner;
 
 public class Sesion3 {
@@ -11,7 +13,8 @@ public class Sesion3 {
                 case 1:
                     int base = leerNumero(5, 30);
                     char caracter = leerCaracter();
-                    dibujarTriangulo(base, caracter);
+                    //dibujarTriangulo(base, caracter);
+                    Sesion4.dibujarTrianguloRecursivo(base,caracter);
                     break;
                 case 2:
                     int lado = leerNumero(10, 35);
@@ -21,11 +24,13 @@ public class Sesion3 {
                 case 3:
                     int numero1 = leerNumero(0, 20);
                     int numero2 = leerNumero(0, 20);
-                    multiplicarIterativo(numero1, numero2);
+                    //multiplicarIterativo(numero1, numero2);
+                    Sesion4.multiplicarRecursivo(numero1,numero2);
                     break;
                 case 4:
                     int numero = leerNumero(0, 10);
-                    tablaDeMultiplicar(numero);
+                    //tablaDeMultiplicar(numero);
+                    Sesion4. tablaDeMultiplicarRecursiva(numero);
                 case 5:
                     System.out.println("Programa finalizado");
             }
@@ -33,7 +38,7 @@ public class Sesion3 {
     }
 
     public static int menu() {
-        System.out.println("1. Dibuja un triangulo rectangulo.");
+        System.out.println("\n1. Dibuja un triangulo rectangulo.");
         System.out.println("2. Dibuja un cuadrado.");
         System.out.println("3. Multiplicar dos numeros.");
         System.out.println("4. Escribir una tabla de multiplicar.");
